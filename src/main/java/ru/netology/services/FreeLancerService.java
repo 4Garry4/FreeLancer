@@ -9,12 +9,12 @@ public class FreeLancerService {
         for (int i = 0; i < 12; i++) {
 
             if (money >= threshold) {
-            money -= expenses;
-            money /= 3;
-            count++;
-            }else{
-                 money += income;
-                 money -= expenses;
+                money -= expenses;
+                money /= 3;
+                count++;
+            } else {
+                money += income;
+                money -= expenses;
             }
         }
         return count;
